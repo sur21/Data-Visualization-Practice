@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Label Styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Dropdown Styling */
+select {
+    padding: 8px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+select:hover {
+    background: #f0f0f0;
+}
+
+/* SVG Chart Container */
+svg {
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Fade-in Tooltip Effect */
+.tooltip.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    svg {
+        width: 95%;
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+}
